@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>MRI4ALL Hackathon 2023</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  
+  <link href="/assets/img/favicon.png" rel="icon">
+  <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  
+  <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  
+  <link href="/assets/css/style.css" rel="stylesheet">
+
+  
+</head>
+
+<body>
+
+  
+  <header id="header" class="d-flex align-items-center header-inner">
+    <div class="container-fluid container-xxl d-flex align-items-center">
+
+      <div id="logo" class="me-auto">
+        
+        
+        <a href="/" class="scrollto"><img src="/assets/img/logo.png" alt="" title=""></a>
+      </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto " href="/#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="/#about">About</a></li>
+          <li><a class="nav-link scrollto" href="/#schedule">Schedule</a></li>
+          <li><a class="nav-link scrollto" href="/#venue">Venue</a></li>
+          <li><a class="nav-link scrollto" href="/#speakers">Teams</a></li>
+          <li><a class="nav-link scrollto" href="/#hotels">Hotels</a></li>
+          <li><a class="nav-link scrollto" href="/#faq">FAQ</a></li>
+          
+          <li><a class="nav-link " href="/news">News</a></li>
+          
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      <a class="buy-tickets" href="/register">Register Now</a>
+
+    </div>
+  </header>
+
+
+
+<main id="main" class="main-page">
+    <section id="" class="mb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col mt-5">
+            <div class="section-header">
+              <h2>REGISTRATION</h2>
+            </div>            
+            <p>Registration for the hackathon is free and open for MRI researchers at all career levels (ranging from students to senior faculty). We require that you are affiliated with an institution or cooperation involved in MRI research and that you have prior experience in MRI.</p>
+
+            <p>Please submit your registration by completing the application form that will appear after the Recaptcha challenge. Please note that if there should be more applications than open spots in the projects teams, we will select participants based on the aim of achieving a wide diversity among the participants (unfortunately, there is a limit on the maximum number of participants that we can host).</p>
+
+            <p>The registration deadline is <strong>September 1st, 2023</strong>. We will be in touch shortly afterwards and inform you if your registration has been accepted.</p>
+          </div>
+        </div>
+        <div class="row" id="captcharow" style="">
+          <div class="col-lg-4"></div>
+          <div id="html_element" class="col-lg-4"></div>
+          <div class="col-lg-4"></div>
+        </div>        
+
+        <div class="row mt-4" id="formrow" style="display: none;">
+          <div class="col">
+              <iframe name="formframe" onload="window.parent.parent.scrollTo(0,0)" width="100%"
+                  height="1200" frameborder="0" marginheight="0" marginwidth="0">
+                  <div class="progress-circular-primary">
+                      <div class="progress-circular-wrapper">
+                          <div class="progress-circular-inner">
+                              <div class="progress-circular-left">
+                                  <div class="progress-circular-spinner"></div>
+                              </div>
+                              <div class="progress-circular-gap"></div>
+                              <div class="progress-circular-right">
+                                  <div class="progress-circular-spinner"></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </iframe>
+          </div>
+
+      </div>
+    </section>
+</main>
+
+
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>
+</script>
+<script type="text/javascript">
+    var onloadCallback = function () {
+        grecaptcha.render('html_element', {
+            'sitekey': '6LfvvnwnAAAAABB3g6Zk_jNQZ9Zz9u7To1VdFiXW',
+            'callback': verifyCallback
+        });
+        
+    };
+
+    var verifyCallback = function (response) {
+        var formab = "aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vZm9ybXMvZC9lLzFGQUlwUUxTZEVHLWR6YkVRVVZhVXJOMnd4ajBKZVk2b19FX0I0eEJMbTRnaGliSGpVQ0tteDhRL3ZpZXdmb3JtP2VtYmVkZGVkPXRydWU=";
+        document.getElementsByName('formframe')[0].src = atob(formab);
+
+        document.getElementById('html_element').style.display = 'none';
+        document.getElementById('formrow').style.display = 'block';
+    };
+
+
+</script>
+
+
+  
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 col-md-12 footer-info">
+            <img src="/assets/img/logo.png" alt="TheEvenet">
+            <p>Our hackathon will engage the MR engineering community toward development of an open-source low-field MRI system. In only four days, we will create a full-fledged MRI scanner, enabling new imaging approaches and dissemination of the know-how needed for scanner development.</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://cai2r.net/i2i" target="_blank">i2i Workshop</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://med.nyu.edu/departments-institutes/radiology/research" target="_blank">NYU Center for Biomedical Imaging</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://www.opensourceimaging.org" target="_blank">Open-Source Imaging</a></li>            
+              <li><i class="bi bi-chevron-right"></i> <a href="/privacy">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p style="margin-bottom: 20px;">
+              Center for Biomedical Imaging<br>
+              Department of Radiology<br>
+              NYU Langone Health<br>
+              660 First Avenue, 4th Floor<br>
+              New York City, NY-10016, USA<br></p>
+              <p><strong>Phone:</strong> +1 212-263-3970<br>
+              <strong>Email:</strong> <a href="mailto:mri4all.org@gmail.com">mri4all.org@gmail.com</a><br>
+            </p>
+
+            <div class="social-links">
+              <a href="https://twitter.com/cai2r" class="twitter" target="_blank"><i class="bi bi-twitter"></i></a>
+              <a href="https://www.linkedin.com/company/cai2r" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
+              <a href="https://github.com/mri4all" class="instagram" target="_blank"><i class="bi bi-github"></i></a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright Center for Biomedical Imaging. All Rights Reserved.
+      </div>
+      <div class="credits">
+        
+        Designed using a theme by <a href="https://bootstrapmade.com/" target="_blank" style="color: #999;">BootstrapMade</a>
+      </div>
+    </div>
+  </footer>
+
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
+<script src="/assets/vendor/aos/aos.js"></script>
+<script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+
+<script src="/assets/js/main.js"></script>
+
+</body>
+
+</html>
+
